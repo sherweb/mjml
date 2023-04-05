@@ -26,7 +26,7 @@ module.exports = {
     ],
   },
   output: {
-    library: 'mjml',
+    library: '@sherweb/mjml',
     filename: 'index.js',
     path: path.resolve(__dirname, './lib'),
     libraryTarget: 'umd',

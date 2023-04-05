@@ -375,7 +375,7 @@ module.exports = [
       file: '.',
       line: 2,
       includedIn: [],
-      tagName: 'mjml',
+      tagName: '@sherweb/mjml',
       children:
        [ { file: '.',
            line: 3,
@@ -446,7 +446,7 @@ module.exports = [
       file: '.',
       line: 2,
       includedIn: [],
-      tagName: 'mjml',
+      tagName: '@sherweb/mjml',
       children:
        [ { file: '.',
            line: 3,
@@ -505,7 +505,7 @@ module.exports = [
     `,
     validJson: { line: 2,
       includedIn: [],
-      tagName: 'mjml',
+      tagName: '@sherweb/mjml',
       children:
        [ { line: 3,
            includedIn: [],

@@ -1,5 +1,5 @@
-import MjSection from 'mjml-section'
-import { suffixCssClasses } from 'mjml-core'
+import MjSection from '@sherweb/mjml-section'
+import { suffixCssClasses } from '@sherweb/mjml-core'
 
 export default class MjWrapper extends MjSection {
   static componentName = 'mj-wrapper'

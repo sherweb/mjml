@@ -1,6 +1,6 @@
 const MJMLParser = require('../lib/index.js')
-require('mjml')
-const components = require('mjml-core').components
+require('@sherweb/mjml')
+const components = require('@sherweb/mjml-core').components
 const chai = require('chai')
 const displayDiff = require('./test-utils').displayDiff
 const omitDeepLodash = require('./test-utils').omitDeepLodash

@@ -175,7 +175,7 @@ export default function MJMLParser(xml, options = {}, includedIn = []) {
     const bindToTree = (children, tree = cur) =>
       children.map((c) => ({ ...c, parent: tree }))
 
-    if (partialMjml.tagName !== 'mjml') {
+    if (partialMjml.tagName !== '@sherweb/mjml') {
       return
     }
 

@@ -1,4 +1,4 @@
-import { BodyComponent } from 'mjml-core'
+import { BodyComponent } from '@sherweb/mjml-core'
 
 export default class MjRaw extends BodyComponent {
   static componentName = 'mj-raw'

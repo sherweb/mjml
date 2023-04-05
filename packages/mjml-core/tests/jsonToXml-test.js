@@ -4,7 +4,7 @@ const jsonToXml = require('../lib/helpers/jsonToXML')
 const json = {
   line: 1,
   includedIn: [],
-  tagName: 'mjml',
+  tagName: '@sherweb/mjml',
   children:
    [ {
        line: 2,

@@ -1,5 +1,5 @@
 import { get } from 'lodash'
-import { HeadComponent } from 'mjml-core'
+import { HeadComponent } from '@sherweb/mjml-core'
 
 export default class MjHtmlAttributes extends HeadComponent {
   static componentName = 'mj-html-attributes'

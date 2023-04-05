@@ -1,8 +1,8 @@
 /* eslint-disable no-console */
 
 import { keys, find, isNil } from 'lodash'
-import MJMLParser from 'mjml-parser-xml'
-import { components } from 'mjml-core'
+import MJMLParser from '@sherweb/mjml-parser-xml'
+import { components } from '@sherweb/mjml-core'
 import { html as htmlBeautify } from 'js-beautify'
 
 import { unavailableTags, attributesWithUnit } from './config'
@@ -187,7 +187,7 @@ const jsonToXML = ({ tagName, attributes, children, content }) => {
 }
 
 export default function migrate(input, options = {}) {
-  console.warn('mjml-migrate is deprecated and will be removed in mjml 5')
+  console.warn('@sherweb/mjml-migrate is deprecated and will be removed in mjml 5')
   const { beautify } = options
   if (typeof input === 'object') return loopThrough(input)
 
@@ -205,7 +205,7 @@ export function handleMjml3(mjml, options = {}) {
 
   if (!options.noMigrateWarn)
     console.log(
-      'MJML v3 syntax detected, migrating to MJML v4 syntax. Use mjml -m to get the migrated MJML.',
+      '@sherweb/mjml v3 syntax detected, migrating to MJML v4 syntax. Use mjml -m to get the migrated MJML.',
     )
   return migrate(mjml)
 }

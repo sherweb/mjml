@@ -11,7 +11,7 @@ import {
   omitBy,
 } from 'lodash'
 
-import MJMLParser from 'mjml-parser-xml'
+import MJMLParser from '@sherweb/mjml-parser-xml'
 
 import shorthandParser, { borderParser } from './helpers/shorthandParser'
 import formatAttributes from './helpers/formatAttributes'

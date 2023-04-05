@@ -1,4 +1,4 @@
-import { BodyComponent } from 'mjml-core'
+import { BodyComponent } from '@sherweb/mjml-core'
 import { isNil } from 'lodash'
 
 export default class MjSocial extends BodyComponent {

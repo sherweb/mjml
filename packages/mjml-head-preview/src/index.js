@@ -1,4 +1,4 @@
-import { HeadComponent } from 'mjml-core'
+import { HeadComponent } from '@sherweb/mjml-core'
 
 export default class MjPreview extends HeadComponent {
   static componentName = 'mj-preview'

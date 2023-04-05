@@ -1,6 +1,6 @@
-import { BodyComponent } from 'mjml-core'
+import { BodyComponent } from '@sherweb/mjml-core'
 
-import widthParser from 'mjml-core/lib/helpers/widthParser'
+import widthParser from '@sherweb/mjml-core/lib/helpers/widthParser'
 
 export default class MjGroup extends BodyComponent {
   static componentName = 'mj-group'
