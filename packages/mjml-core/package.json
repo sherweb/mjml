@@ -1,7 +1,7 @@
 {
   "name": "@sherweb/mjml-core",
   "description": "@sherweb/mjml-core",
-  "version": "14.13.0",
+  "version": "4.13.1",
   "main": "lib/index.js",
   "files": [
     "lib"
@@ -23,9 +23,9 @@
   },
   "dependencies": {
     "@babel/runtime": "^7.14.6",
-    "@sherweb/mjml-migrate": "14.13.0",
-    "@sherweb/mjml-parser-xml": "14.13.0",
-    "@sherweb/mjml-validator": "14.13.0",
+    "@sherweb/mjml-migrate": "4.13.1",
+    "@sherweb/mjml-parser-xml": "4.13.1",
+    "@sherweb/mjml-validator": "4.13.1",
     "cheerio": "1.0.0-rc.10",
     "detect-node": "2.0.4",
     "js-beautify": "^1.6.14",
