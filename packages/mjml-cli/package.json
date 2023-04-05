@@ -1,7 +1,7 @@
 {
   "name": "@sherweb/mjml-cli",
   "description": "@sherweb/mjml: the only framework that makes responsive-email easy",
-  "version": "4.13.2",
+  "version": "4.13.3",
   "main": "bin/mjml",
   "bin": {
     "@sherweb/mjml-cli": "bin/mjml"
@@ -26,10 +26,10 @@
   },
   "dependencies": {
     "@babel/runtime": "^7.14.6",
-    "@sherweb/mjml-core": "4.13.2",
-    "@sherweb/mjml-migrate": "4.13.2",
-    "@sherweb/mjml-parser-xml": "4.13.2",
-    "@sherweb/mjml-validator": "4.13.2",
+    "@sherweb/mjml-core": "4.13.3",
+    "@sherweb/mjml-migrate": "4.13.3",
+    "@sherweb/mjml-parser-xml": "4.13.3",
+    "@sherweb/mjml-validator": "4.13.3",
     "chokidar": "^3.0.0",
     "glob": "^7.1.1",
     "js-beautify": "^1.6.14",
