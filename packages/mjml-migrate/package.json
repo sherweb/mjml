@@ -31,5 +31,8 @@
     "js-beautify": "^1.6.14",
     "lodash": "^4.17.21",
     "yargs": "^16.1.0"
+  },
+  "publishConfig": {
+    "registry": "https://github.com/sherweb/mjml"
   }
 }

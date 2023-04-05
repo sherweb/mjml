@@ -51,5 +51,8 @@
   "devDependencies": {
     "@babel/cli": "^7.8.4",
     "rimraf": "^3.0.2"
+  },
+  "publishConfig": {
+    "registry": "https://github.com/sherweb/mjml"
   }
 }
