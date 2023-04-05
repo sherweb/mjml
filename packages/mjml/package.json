@@ -27,11 +27,11 @@
   },
   "dependencies": {
     "@babel/runtime": "^7.14.6",
-    "@sherweb/mjml-cli": "4.13.0",
-    "@sherweb/mjml-core": "4.13.0",
-    "@sherweb/mjml-migrate": "4.13.0",
-    "@sherweb/mjml-preset-core": "4.13.0",
-    "@sherweb/mjml-validator": "4.13.0"
+    "@sherweb/mjml-cli": "4.13.1",
+    "@sherweb/mjml-core": "4.13.1",
+    "@sherweb/mjml-migrate": "4.13.1",
+    "@sherweb/mjml-preset-core": "4.13.1",
+    "@sherweb/mjml-validator": "4.13.1"
   },
   "devDependencies": {
     "@babel/cli": "^7.8.4",
