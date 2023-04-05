@@ -13,7 +13,6 @@ import {
 import path from 'path'
 import juice from 'juice'
 import { html as htmlBeautify } from 'js-beautify'
-import { minify as htmlMinify } from 'html-minifier'
 import cheerio from 'cheerio'
 
 import MJMLParser from 'mjml-parser-xml'
@@ -107,8 +106,6 @@ export default function mjml2html(mjml, options = {}) {
       Ubuntu: 'https://fonts.googleapis.com/css?family=Ubuntu:300,400,500,700',
     },
     keepComments,
-    minify = false,
-    minifyOptions = {},
     ignoreIncludes = false,
     juiceOptions = {},
     juicePreserveTags = null,
@@ -403,21 +400,6 @@ export default function mjml2html(mjml, options = {}) {
       wrap_attributes_indent_size: 2,
       max_preserve_newline: 0,
       preserve_newlines: false,
-    })
-  }
-
-  if (minify) {
-    // eslint-disable-next-line no-console
-    console.warn(
-      '"minify" option is deprecated in mjml-core and only available in mjml cli.',
-    )
-
-    content = htmlMinify(content, {
-      collapseWhitespace: true,
-      minifyCSS: false,
-      caseSensitive: true,
-      removeEmptyAttributes: true,
-      ...minifyOptions,
     })
   }
 

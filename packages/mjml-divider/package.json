@@ -1,6 +1,6 @@
 {
-  "name": "mjml-divider",
-  "description": "mjml-divider",
+  "name": "@sherweb/mjml-divider",
+  "description": "@sherweb/mjml-divider",
   "version": "4.13.0",
   "main": "lib/index.js",
   "files": [
@@ -23,7 +23,7 @@
   "dependencies": {
     "@babel/runtime": "^7.14.6",
     "lodash": "^4.17.21",
-    "mjml-core": "4.13.0"
+    "@sherweb/mjml-core": "4.13.0"
   },
   "devDependencies": {
     "@babel/cli": "^7.8.4",

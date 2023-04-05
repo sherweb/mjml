@@ -1,6 +1,6 @@
 {
-  "name": "mjml-browser",
-  "description": "MJML: the only framework that makes responsive-email easy",
+  "name": "@sherweb/mjml-browser",
+  "description": "@sherweb/mjml: the only framework that makes responsive-email easy",
   "version": "4.13.0",
   "main": "lib/index.js",
   "files": [

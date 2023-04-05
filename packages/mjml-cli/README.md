@@ -113,22 +113,13 @@ mjml input.mjml -c.optionName value
 
 All the options that can be passed to mjml2html (see general documentation) can be provided. The most common ones are detailed below.
 
-### Minify and beautify the output HTML
+### Beautify the output HTML
 
 ```bash
-$> mjml input.mjml --config.beautify true --config.minify false
+$> mjml input.mjml --config.beautify true
 ```
 
 These are the default options.  
-
-### Change minify options
-
-```bash
-$> mjml input.mjml --config.minifyOptions='{"minifyCSS": true, "removeEmptyAttributes": false}'
-```
-
-The defaults are "collapseWhitespace": true, "minifyCSS": false, "removeEmptyAttributes": true  
-See html-minifier documentation for more available options
 
 ### Change juice options (library used for inlining mj-style css)
 

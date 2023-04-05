@@ -3,7 +3,6 @@ import yargs from 'yargs'
 import { flow, pick, isNil, negate, pickBy } from 'lodash/fp'
 import { isArray, isEmpty, map, get, omit } from 'lodash'
 import { html as htmlBeautify } from 'js-beautify'
-import { minify as htmlMinify } from 'html-minifier'
 
 import mjml2html, { components, initializeType } from 'mjml-core'
 import migrate from 'mjml-migrate'
@@ -26,13 +25,6 @@ const beautifyConfig = {
   max_preserve_newline: 0,
   preserve_newlines: false,
   end_with_newline: true,
-}
-
-const minifyConfig = {
-  collapseWhitespace: true,
-  minifyCSS: false,
-  caseSensitive: true,
-  removeEmptyAttributes: true,
 }
 
 export default async () => {
@@ -105,7 +97,6 @@ export default async () => {
     .version(`mjml-core: ${coreVersion}\nmjml-cli: ${cliVersion}`)
 
   let juiceOptions
-  let minifyOptions
   let juicePreserveTags
   let fonts
 
@@ -114,13 +105,6 @@ export default async () => {
       argv.c && argv.c.juiceOptions && JSON.parse(argv.c.juiceOptions)
   } catch (e) {
     error(`Failed to decode JSON for config.juiceOptions argument`)
-  }
-
-  try {
-    minifyOptions =
-      argv.c && argv.c.minifyOptions && JSON.parse(argv.c.minifyOptions)
-  } catch (e) {
-    error(`Failed to decode JSON for config.minifyOptions argument`)
   }
 
   try {
@@ -142,7 +126,6 @@ export default async () => {
     DEFAULT_OPTIONS,
     argv.c,
     fonts && { fonts },
-    minifyOptions && { minifyOptions },
     juiceOptions && { juiceOptions },
     juicePreserveTags && { juicePreserveTags },
     argv.c && argv.c.keepComments === 'false' && { keepComments: false },
@@ -197,7 +180,6 @@ export default async () => {
       watchFiles(inputFiles, {
         ...argv,
         config,
-        minifyConfig,
         beautifyConfig,
       })
       KEEP_OPEN = true
@@ -236,21 +218,14 @@ export default async () => {
 
         default: {
           const beautify = config.beautify && config.beautify !== 'false'
-          const minify = config.minify && config.minify !== 'false'
 
           compiled = mjml2html(i.mjml, {
-            ...omit(config, ['minify', 'beautify']),
+            ...omit(config, ['beautify']),
             filePath: filePath || i.file,
             actualPath: i.file,
           })
           if (beautify) {
             compiled.html = htmlBeautify(compiled.html, beautifyConfig)
-          }
-          if (minify) {
-            compiled.html = htmlMinify(compiled.html, {
-              ...minifyConfig,
-              ...config.minifyOptions,
-            })
           }
         }
       }

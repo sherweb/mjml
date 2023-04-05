@@ -1,6 +1,6 @@
 {
-  "name": "mjml-validator",
-  "description": "mjml-validator",
+  "name": "@sherweb/mjml-validator",
+  "description": "@sherweb/mjml-validator",
   "version": "4.13.0",
   "main": "lib/index.js",
   "files": [

@@ -1,5 +1,5 @@
 {
-  "name": "mjml-master",
+  "name": "@sherweb/mjml-master",
   "private": true,
   "scripts": {
     "build:watch": "lerna run build --parallel -- -- -w",
@@ -30,5 +30,8 @@
     "open": "^7.3.0",
     "prettier": "^2.0.5",
     "rimraf": "^3.0.2"
+  },
+  "publishConfig": {
+    "registry": "https://github.com/sherweb/mjml"
   }
 }

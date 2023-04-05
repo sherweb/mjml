@@ -1,6 +1,6 @@
 {
-  "name": "mjml-wrapper",
-  "description": "mjml-wrapper",
+  "name": "@sherweb/mjml-wrapper",
+  "description": "@sherweb/mjml-wrapper",
   "version": "4.13.0",
   "main": "lib/index.js",
   "files": [
@@ -23,8 +23,8 @@
   "dependencies": {
     "@babel/runtime": "^7.14.6",
     "lodash": "^4.17.21",
-    "mjml-core": "4.13.0",
-    "mjml-section": "4.13.0"
+    "@sherweb/mjml-core": "4.13.0",
+    "@sherweb/mjml-section": "4.13.0"
   },
   "devDependencies": {
     "@babel/cli": "^7.8.4",
