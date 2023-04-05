@@ -1,7 +1,7 @@
 {
   "name": "@sherweb/mjml-wrapper",
   "description": "@sherweb/mjml-wrapper",
-  "version": "4.13.1",
+  "version": "4.13.2",
   "main": "lib/index.js",
   "files": [
     "lib"
@@ -22,8 +22,8 @@
   },
   "dependencies": {
     "@babel/runtime": "^7.14.6",
-    "@sherweb/mjml-core": "4.13.1",
-    "@sherweb/mjml-section": "4.13.1",
+    "@sherweb/mjml-core": "4.13.2",
+    "@sherweb/mjml-section": "4.13.2",
     "lodash": "^4.17.21"
   },
   "devDependencies": {
