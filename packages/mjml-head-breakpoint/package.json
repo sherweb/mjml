@@ -1,7 +1,7 @@
 {
   "name": "@sherweb/mjml-head-breakpoint",
   "description": "@sherweb/mjml-head-breakpoint",
-  "version": "4.13.3",
+  "version": "4.13.4",
   "main": "lib/index.js",
   "files": [
     "lib"
@@ -22,7 +22,7 @@
   },
   "dependencies": {
     "@babel/runtime": "^7.14.6",
-    "@sherweb/mjml-core": "4.13.3",
+    "@sherweb/mjml-core": "4.13.4",
     "lodash": "^4.17.21"
   },
   "devDependencies": {
