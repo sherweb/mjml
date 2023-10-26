@@ -40,8 +40,8 @@ export default class MjColumn extends BodyComponent {
     const { nonRawSiblings } = this.props
     const { borders, paddings } = this.getBoxWidths()
     const innerBorders =
-      this.getShorthandAttrValue('inner-border', 'left') +
-      this.getShorthandAttrValue('inner-border', 'right')
+      this.getShorthandBorderValue('left', 'inner-border') +
+      this.getShorthandBorderValue('right', 'inner-border')
 
     const allPaddings = paddings + borders + innerBorders
 
@@ -138,7 +138,7 @@ export default class MjColumn extends BodyComponent {
         return width
       case 'px':
       default:
-        return `${parsedWidth / parseInt(containerWidth, 10)}%`
+        return `${parsedWidth / parseInt(containerWidth, 10) * 100}%`
     }
   }
 
@@ -258,7 +258,6 @@ export default class MjColumn extends BodyComponent {
                 <td
                   ${component.htmlAttributes({
                     align: component.getAttribute('align'),
-                    'vertical-align': component.getAttribute('vertical-align'),
                     class: component.getAttribute('css-class'),
                     style: {
                       background: component.getAttribute(
