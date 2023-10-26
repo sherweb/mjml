@@ -1,6 +1,6 @@
 {
   "name": "@sherweb/mjml-migrate",
-  "version": "4.14.4",
+  "version": "4.14.5",
   "description": "A tool to migrate a template from MJML 3 to MJML 4",
   "main": "lib/migrate.js",
   "bin": {
@@ -21,15 +21,15 @@
   "author": "Nicolas Garnier",
   "license": "MIT",
   "devDependencies": {
-    "@babel/cli": "^7.8.4",
+    "@babel/cli": "^7.23.0",
     "rimraf": "^3.0.2"
   },
   "dependencies": {
-    "@babel/runtime": "^7.14.6",
+    "@babel/runtime": "^7.23.2",
     "js-beautify": "^1.14.9",
     "lodash": "^4.17.21",
-    "@sherweb/mjml-core": "4.14.4",
-    "@sherweb/mjml-parser-xml": "4.14.4",
+    "@sherweb/mjml-core": "4.14.5",
+    "@sherweb/mjml-parser-xml": "4.14.5",
     "yargs": "^17.7.2"
   }
 }

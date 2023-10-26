@@ -1,7 +1,7 @@
 {
   "name": "@sherweb/mjml",
   "description": "MJML: the only framework that makes responsive-email easy",
-  "version": "4.14.4",
+  "version": "4.14.5",
   "main": "lib/index.js",
   "bin": {
     "mjml": "bin/mjml"
@@ -26,15 +26,15 @@
     "test": "node ./test/index.js"
   },
   "dependencies": {
-    "@babel/runtime": "^7.14.6",
-    "@sherweb/mjml-cli": "4.14.4",
-    "@sherweb/mjml-core": "4.14.4",
-    "@sherweb/mjml-migrate": "4.14.4",
-    "@sherweb/mjml-preset-core": "4.14.4",
+    "@babel/runtime": "^7.23.2",
+    "@sherweb/mjml-cli": "4.14.5",
+    "@sherweb/mjml-core": "4.14.5",
+    "@sherweb/mjml-migrate": "4.14.5",
+    "@sherweb/mjml-preset-core": "4.14.5",
     "@sherweb/mjml-validator": "4.13.0"
   },
   "devDependencies": {
-    "@babel/cli": "^7.8.4",
+    "@babel/cli": "^7.23.0",
     "chai": "^4.1.1",
     "chai-spies": "^1.0.0",
     "cheerio": "1.0.0-rc.12",
