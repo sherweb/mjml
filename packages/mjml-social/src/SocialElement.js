@@ -125,6 +125,7 @@ export default class MjSocialElement extends BodyComponent {
   }
 
   static defaultAttributes = {
+    alt: '',
     align: 'left',
     color: '#000',
     'border-radius': '3px',
@@ -148,6 +149,10 @@ export default class MjSocialElement extends BodyComponent {
     return {
       td: {
         padding: this.getAttribute('padding'),
+        'padding-top': this.getAttribute('padding-top'),
+        'padding-right': this.getAttribute('padding-right'),
+        'padding-bottom': this.getAttribute('padding-bottom'),
+        'padding-left': this.getAttribute('padding-left'),
         'vertical-align': this.getAttribute('vertical-align'),
       },
       table: {

@@ -26,6 +26,10 @@ In addition to the language plugin, a linter is available to highlight errors in
 
 [IntelliJ IDEA](https://www.jetbrains.com/idea/) is an IDE developed by JetBrains. The plugin provides you with a (near) realtime preview, auto complete, inline documentation and code analysis. Its available on the [JetBrains Marketplace](https://plugins.jetbrains.com/plugin/16418-mjml-support).
 
+## Gradle Plugin - MJML Compilation
+[Gradle](https://gradle.org/) is a build tool for a various set of languages and environments, mainly used for java/kotlin. The plugin provides an easy way to embed your mjml templates to your java/kotlin application in its resources in precompiled form (html). 
+It's available through the gradle plugin system [io.freefair.mjml.java](https://plugins.gradle.org/plugin/io.freefair.mjml.java) and documentation is available here [FreeFair User Guide](https://docs.freefair.io/gradle-plugins/current/reference/)
+
 ## Gulp
 
 Gulp is a tool designed to help you automate and enhance your workflow. Our plugin enables you to plug the MJML translation engine into your workflow, helping you to streamline your development workflow. It is available here on [Github](https://github.com/mjmlio/gulp-mjml)
@@ -33,6 +37,10 @@ Gulp is a tool designed to help you automate and enhance your workflow. Our plug
 ## Neos CMS
 
 [Neos CMS](https://www.neos.io/) is a content management system that combines structured content with application. This package adds the helper for compiling `MJML` markup as well as some prototypes which allow to use TailwindCSS like classes in your `MJML` markup. It is available on [packagist](https://packagist.org/packages/garagist/mjml)
+
+## Easy-email
+
+[Easy-email](https://github.com/zalify/easy-email) is a Drag-and-Drop Email Editor based on MJML. Transform structured JSON data into major email clients compatible HTML. Written in Typescript and supported both in browser and Node.js.
 
 ## Contribute to the MJML ecosystem
 

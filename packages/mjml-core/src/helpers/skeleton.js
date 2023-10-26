@@ -1,7 +1,8 @@
-import { map, reduce, negate, isNil, isFunction } from 'lodash'
+import { negate, isNil } from 'lodash'
 import buildPreview from './preview'
 import { buildFontsTags } from './fonts'
 import buildMediaQueriesTags from './mediaQueries'
+import { buildStyleFromComponents, buildStyleFromTags } from './styles'
 
 export default function skeleton(options) {
   const {
@@ -11,23 +12,21 @@ export default function skeleton(options) {
     content = '',
     fonts = {},
     mediaQueries = {},
-    headStyle = [],
-    componentsHeadStyle = {},
+    headStyle = {},
+    componentsHeadStyle = [],
     headRaw = [],
     preview,
     title = '',
     style = [],
     forceOWADesktop,
+    printerSupport,
     inlineStyle,
     lang,
     dir,
   } = options
 
-  const langAttribute = lang ? `lang="${lang}" ` : ''
-  const dirAttribute = dir ? `dir="${dir}" ` : ''
-
   return `${beforeDoctype ? `${beforeDoctype}\n` : ''}<!doctype html>
-<html ${langAttribute}${dirAttribute}xmlns="http://www.w3.org/1999/xhtml" xmlns:v="urn:schemas-microsoft-com:vml" xmlns:o="urn:schemas-microsoft-com:office:office">
+<html lang="${lang}" dir="${dir}" xmlns="http://www.w3.org/1999/xhtml" xmlns:v="urn:schemas-microsoft-com:vml" xmlns:o="urn:schemas-microsoft-com:office:office">
   <head>
     <title>${title}</title>
     <!--[if !mso]><!-->
@@ -58,22 +57,12 @@ export default function skeleton(options) {
     </style>
     <![endif]-->
     ${buildFontsTags(content, inlineStyle, fonts)}
-    ${buildMediaQueriesTags(breakpoint, mediaQueries, forceOWADesktop)}
-    <style type="text/css">
-    ${reduce(
-      componentsHeadStyle,
-      (result, compHeadStyle) => `${result}\n${compHeadStyle(breakpoint)}`,
-      '',
-    )}
-    ${reduce(
-      headStyle,
-      (result, headStyle) => `${result}\n${headStyle(breakpoint)}`,
-      '',
-    )}
-    </style>
-    <style type="text/css">
-    ${map(style, (s) => (isFunction(s) ? s(breakpoint) : s)).join('')}
-    </style>
+    ${buildMediaQueriesTags(breakpoint, mediaQueries, {
+      forceOWADesktop,
+      printerSupport,
+    })}
+    ${buildStyleFromComponents(breakpoint, componentsHeadStyle, headStyle)}
+    ${buildStyleFromTags(breakpoint, style)}
     ${headRaw.filter(negate(isNil)).join('\n')}
   </head>
   <body style="word-spacing:normal;${
