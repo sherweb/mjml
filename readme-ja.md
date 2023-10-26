@@ -110,7 +110,7 @@ mjml input.mjml -o output.html
 ## Node.js
 
 ```javascript
-import mjml2html from 'mjml'
+import mjml2html from '@sherweb/mjml'
 
 /*
   mjml文字列をコンパイルする

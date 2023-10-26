@@ -1,4 +1,4 @@
-import { BodyComponent, suffixCssClasses } from 'mjml-core'
+import { BodyComponent, suffixCssClasses } from '@sherweb/mjml-core'
 
 export default class MjCarouselImage extends BodyComponent {
   static componentName = 'mj-carousel-image'

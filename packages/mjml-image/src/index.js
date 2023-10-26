@@ -1,8 +1,8 @@
 import { min } from 'lodash'
 
-import { BodyComponent, makeLowerBreakpoint } from 'mjml-core'
+import { BodyComponent, makeLowerBreakpoint } from '@sherweb/mjml-core'
 
-import widthParser from 'mjml-core/lib/helpers/widthParser'
+import widthParser from '@sherweb/mjml-core/lib/helpers/widthParser'
 
 export default class MjImage extends BodyComponent {
   static componentName = 'mj-image'

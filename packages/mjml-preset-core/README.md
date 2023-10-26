@@ -11,8 +11,8 @@ This is the set of mjml components bundled together for simple setup.
 ### Usage
 
 ```javascript
-import mjml2html from 'mjml-core'
-import presetCore from 'mjml-preset-core'
+import mjml2html from '@sherweb/mjml-core'
+import presetCore from '@sherweb/mjml-preset-core'
 
 console.log(mjml2html(`code`, { presets: [presetCore] }))
 ```

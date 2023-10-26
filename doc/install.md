@@ -71,7 +71,7 @@ argument                                                | description           
 ## Inside Node.js
 
 ```javascript
-import mjml2html from 'mjml'
+import mjml2html from '@sherweb/mjml'
 
 /*
   Compile an mjml string

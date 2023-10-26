@@ -1,4 +1,4 @@
-import { HeadComponent } from 'mjml-core'
+import { HeadComponent } from '@sherweb/mjml-core'
 
 export default class MjFont extends HeadComponent {
   static componentName = 'mj-font'

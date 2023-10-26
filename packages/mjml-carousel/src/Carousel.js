@@ -1,8 +1,8 @@
-import { BodyComponent } from 'mjml-core'
+import { BodyComponent } from '@sherweb/mjml-core'
 import { range, repeat, min, map } from 'lodash'
 
-import { msoConditionalTag } from 'mjml-core/lib/helpers/conditionalTag'
-import genRandomHexString from 'mjml-core/lib/helpers/genRandomHexString'
+import { msoConditionalTag } from '@sherweb/mjml-core/lib/helpers/conditionalTag'
+import genRandomHexString from '@sherweb/mjml-core/lib/helpers/genRandomHexString'
 
 export default class MjCarousel extends BodyComponent {
   static componentName = 'mj-carousel'

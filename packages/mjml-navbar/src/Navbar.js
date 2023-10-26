@@ -1,9 +1,9 @@
-import { BodyComponent, makeLowerBreakpoint } from 'mjml-core'
+import { BodyComponent, makeLowerBreakpoint } from '@sherweb/mjml-core'
 
 import conditionalTag, {
   msoConditionalTag,
-} from 'mjml-core/lib/helpers/conditionalTag'
-import genRandomHexString from 'mjml-core/lib/helpers/genRandomHexString'
+} from '@sherweb/mjml-core/lib/helpers/conditionalTag'
+import genRandomHexString from '@sherweb/mjml-core/lib/helpers/genRandomHexString'
 
 export default class MjNavbar extends BodyComponent {
   static componentName = 'mj-navbar'

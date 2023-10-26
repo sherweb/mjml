@@ -31,7 +31,7 @@
     "lodash": "^4.17.21",
     "@sherweb/mjml-migrate": "4.14.4",
     "@sherweb/mjml-parser-xml": "4.14.4",
-    "mjml-validator": "4.13.0"
+    "@sherweb/mjml-validator": "4.13.0"
   },
   "devDependencies": {
     "@babel/cli": "^7.8.4",
