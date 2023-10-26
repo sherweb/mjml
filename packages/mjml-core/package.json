@@ -1,7 +1,7 @@
 {
-  "name": "mjml-core",
+  "name": "@sherweb/mjml-core",
   "description": "mjml-core",
-  "version": "4.14.1",
+  "version": "4.14.2",
   "main": "lib/index.js",
   "files": [
     "lib"
@@ -29,8 +29,8 @@
     "js-beautify": "^1.14.9",
     "juice": "^9.0.0",
     "lodash": "^4.17.21",
-    "mjml-migrate": "4.14.1",
-    "mjml-parser-xml": "4.14.1",
+    "mjml-migrate": "4.14.2",
+    "mjml-parser-xml": "4.14.2",
     "mjml-validator": "4.13.0"
   },
   "devDependencies": {
