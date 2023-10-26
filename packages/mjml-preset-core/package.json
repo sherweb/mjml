@@ -8,12 +8,12 @@
   ],
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/mjmlio/mjml.git",
+    "url": "git+https://github.com/Sherweb/mjml.git",
     "directory": "packages/mjml-preset-core"
   },
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/mjmlio/mjml/issues"
+    "url": "https://github.com/Sherweb/mjml/issues"
   },
   "homepage": "https://mjml.io",
   "scripts": {
