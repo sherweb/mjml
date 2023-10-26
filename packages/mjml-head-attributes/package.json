@@ -1,7 +1,7 @@
 {
   "name": "@sherweb/mjml-head-attributes",
   "description": "mjml-head-attributes",
-  "version": "4.14.3",
+  "version": "4.14.4",
   "main": "lib/index.js",
   "files": [
     "lib"
@@ -23,7 +23,7 @@
   "dependencies": {
     "@babel/runtime": "^7.14.6",
     "lodash": "^4.17.21",
-    "@sherweb/mjml-core": "4.14.3"
+    "@sherweb/mjml-core": "4.14.4"
   },
   "devDependencies": {
     "@babel/cli": "^7.8.4",
